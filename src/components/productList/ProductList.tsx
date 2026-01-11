@@ -1,3 +1,4 @@
+import AddProduct from "../addProduct/AddProduct";
 import styles from "./ProductList.module.css";
 
 const ProductList = () => {
@@ -8,6 +9,7 @@ const ProductList = () => {
         <h2>Product</h2>
         <h2>Discount</h2>
       </section>
+
       <section>
         <p>1.</p>
         <section>
@@ -16,7 +18,8 @@ const ProductList = () => {
         </section>
         <button>Add Discount</button>
       </section>
-      <button>Add Product</button>
+
+      <AddProduct />
     </article>
   );
 };

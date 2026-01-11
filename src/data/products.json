@@ -1,0 +1,171 @@
+[
+  {
+    "id": 1,
+    "title": "Fog Linen Chambray Towel - Beige Stripe",
+    "variants": [
+      { "id": 101, "product_id": 1, "title": "XS / Silver", "price": "49" },
+      { "id": 102, "product_id": 1, "title": "S / Silver", "price": "49" },
+      { "id": 103, "product_id": 1, "title": "M / Silver", "price": "49" }
+    ],
+    "image": { "src": "https://via.placeholder.com/150?text=Towel" }
+  },
+  {
+    "id": 2,
+    "title": "Orbit Terrarium - Large",
+    "variants": [
+      { "id": 201, "product_id": 2, "title": "Default Title", "price": "109" }
+    ],
+    "image": { "src": "https://via.placeholder.com/150?text=Terrarium" }
+  },
+  {
+    "id": 3,
+    "title": "Leather Laptop Sleeve",
+    "variants": [
+      { "id": 301, "product_id": 3, "title": "13 inch", "price": "79" },
+      { "id": 302, "product_id": 3, "title": "15 inch", "price": "89" }
+    ],
+    "image": { "src": "https://via.placeholder.com/150?text=Sleeve" }
+  },
+  {
+    "id": 4,
+    "title": "Ceramic Coffee Mug",
+    "variants": [
+      { "id": 401, "product_id": 4, "title": "White", "price": "15" },
+      { "id": 402, "product_id": 4, "title": "Black", "price": "15" }
+    ],
+    "image": { "src": "https://via.placeholder.com/150?text=Mug" }
+  },
+  {
+    "id": 5,
+    "title": "Minimal Desk Lamp",
+    "variants": [
+      { "id": 501, "product_id": 5, "title": "Warm Light", "price": "45" },
+      { "id": 502, "product_id": 5, "title": "Cool Light", "price": "45" }
+    ],
+    "image": { "src": "https://via.placeholder.com/150?text=Lamp" }
+  },
+  {
+    "id": 6,
+    "title": "Canvas Backpack",
+    "variants": [
+      { "id": 601, "product_id": 6, "title": "Brown", "price": "120" },
+      { "id": 602, "product_id": 6, "title": "Olive", "price": "120" }
+    ],
+    "image": { "src": "https://via.placeholder.com/150?text=Backpack" }
+  },
+  {
+    "id": 7,
+    "title": "Wooden Phone Stand",
+    "variants": [{ "id": 701, "product_id": 7, "title": "Oak", "price": "25" }],
+    "image": { "src": "https://via.placeholder.com/150?text=Stand" }
+  },
+  {
+    "id": 8,
+    "title": "Bluetooth Headphones",
+    "variants": [
+      { "id": 801, "product_id": 8, "title": "Black", "price": "199" },
+      { "id": 802, "product_id": 8, "title": "White", "price": "199" }
+    ],
+    "image": { "src": "https://via.placeholder.com/150?text=Headphones" }
+  },
+  {
+    "id": 9,
+    "title": "Stainless Steel Water Bottle",
+    "variants": [
+      { "id": 901, "product_id": 9, "title": "500ml", "price": "30" },
+      { "id": 902, "product_id": 9, "title": "1L", "price": "40" }
+    ],
+    "image": { "src": "https://via.placeholder.com/150?text=Bottle" }
+  },
+  {
+    "id": 10,
+    "title": "Running Shoes",
+    "variants": [
+      { "id": 1001, "product_id": 10, "title": "Size 8", "price": "150" },
+      { "id": 1002, "product_id": 10, "title": "Size 9", "price": "150" }
+    ],
+    "image": { "src": "https://via.placeholder.com/150?text=Shoes" }
+  },
+  {
+    "id": 11,
+    "title": "Yoga Mat",
+    "variants": [
+      { "id": 1101, "product_id": 11, "title": "Purple", "price": "35" }
+    ],
+    "image": { "src": "https://via.placeholder.com/150?text=Yoga+Mat" }
+  },
+  {
+    "id": 12,
+    "title": "Wireless Mouse",
+    "variants": [
+      { "id": 1201, "product_id": 12, "title": "Black", "price": "25" }
+    ],
+    "image": { "src": "https://via.placeholder.com/150?text=Mouse" }
+  },
+  {
+    "id": 13,
+    "title": "Mechanical Keyboard",
+    "variants": [
+      { "id": 1301, "product_id": 13, "title": "Blue Switch", "price": "99" },
+      { "id": 1302, "product_id": 13, "title": "Red Switch", "price": "99" }
+    ],
+    "image": { "src": "https://via.placeholder.com/150?text=Keyboard" }
+  },
+  {
+    "id": 14,
+    "title": "Smart Watch",
+    "variants": [
+      { "id": 1401, "product_id": 14, "title": "42mm", "price": "199" },
+      { "id": 1402, "product_id": 14, "title": "46mm", "price": "229" }
+    ],
+    "image": { "src": "https://via.placeholder.com/150?text=Watch" }
+  },
+  {
+    "id": 15,
+    "title": "Portable Speaker",
+    "variants": [
+      { "id": 1501, "product_id": 15, "title": "Black", "price": "89" }
+    ],
+    "image": { "src": "https://via.placeholder.com/150?text=Speaker" }
+  },
+  {
+    "id": 16,
+    "title": "Desk Organizer",
+    "variants": [
+      { "id": 1601, "product_id": 16, "title": "Wood", "price": "55" }
+    ],
+    "image": { "src": "https://via.placeholder.com/150?text=Organizer" }
+  },
+  {
+    "id": 17,
+    "title": "Cotton Bed Sheet",
+    "variants": [
+      { "id": 1701, "product_id": 17, "title": "Queen Size", "price": "75" }
+    ],
+    "image": { "src": "https://via.placeholder.com/150?text=Bedsheet" }
+  },
+  {
+    "id": 18,
+    "title": "Travel Duffel Bag",
+    "variants": [
+      { "id": 1801, "product_id": 18, "title": "Navy Blue", "price": "140" }
+    ],
+    "image": { "src": "https://via.placeholder.com/150?text=Duffel" }
+  },
+  {
+    "id": 19,
+    "title": "Scented Candle",
+    "variants": [
+      { "id": 1901, "product_id": 19, "title": "Lavender", "price": "20" }
+    ],
+    "image": { "src": "https://via.placeholder.com/150?text=Candle" }
+  },
+  {
+    "id": 20,
+    "title": "Notebook Journal",
+    "variants": [
+      { "id": 2001, "product_id": 20, "title": "A5", "price": "12" }
+    ],
+    "image": { "src": "https://via.placeholder.com/150?text=Notebook" }
+  }
+]
