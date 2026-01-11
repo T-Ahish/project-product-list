@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { fetchProducts } from "../../services/productAPI";
+import type { Product } from "../../services/productAPI";
 
 const ProductPicker = () => {
-  const [products, setProducts] = useState<object[]>([]);
+  const [products, setProducts] = useState<Product[]>([]);
   const [page, setPage] = useState<number>(1);
   const [hasMore, setHasMore] = useState<boolean>(true);
   const [loading, setLoading] = useState<boolean>(false);
@@ -18,7 +19,7 @@ const ProductPicker = () => {
   };
 
   const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
-    const { scrollTop, scrollHeight, clientHeight } = e.target;
+    const { scrollTop, scrollHeight, clientHeight } = e.currentTarget;
     if (scrollHeight - scrollTop <= clientHeight + 20 && hasMore && !loading) {
       const nextPage = page + 1;
       setPage(nextPage);
