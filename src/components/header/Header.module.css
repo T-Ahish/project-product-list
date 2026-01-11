@@ -1,0 +1,21 @@
+.header {
+  border-bottom: 1px solid #d1d1d1;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.headerLogo {
+  height: 30px;
+  padding: 16px 8px;
+}
+
+.headerTitle {
+  font-family: "sf-pro-text", sans-serif;
+  color: #7e8185;
+  vertical-align: middle;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
