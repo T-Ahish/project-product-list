@@ -46,3 +46,11 @@
 .itemDiscount:hover {
   background-color: #00664c;
 }
+
+.itemRemove {
+  background-color: transparent;
+  color: #999;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}

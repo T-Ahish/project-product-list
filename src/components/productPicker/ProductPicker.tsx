@@ -1,5 +1,6 @@
 import type { Product, Variant } from "../../utils/products.interface";
 import type { FetchProducts } from "../../utils/fetchProducts.interface";
+import "./ProductPickerStyles.css";
 
 const ProductPicker = ({
   selectedProducts,
@@ -60,45 +61,41 @@ const ProductPicker = ({
   };
 
   return (
-    <section
-      style={{ maxHeight: "400px", overflowY: "auto" }}
-      onScroll={handleScroll}
-    >
-      {products.map((p) => (
-        <div
-          key={p.id + 10}
-          style={{
-            display: "flex",
-            gap: "10px",
-            padding: "8px",
-            borderBottom: "1px solid #eee",
-          }}
-        >
-          <input
-            type="checkbox"
-            checked={selectedProducts.includes(p.id)}
-            onChange={(e) => handleAddProducts(e, p)}
-          />
-          <img src={p.image.src} width="50" />
-          <div>
-            <h3>{p.title}</h3>
+    <section className="picker">
+      <div className="pickerList" onScroll={handleScroll}>
+        {products.map((p) => (
+          <div key={p.id} className="product">
+            <div className="productHeader">
+              <input
+                type="checkbox"
+                checked={selectedProducts.includes(p.id)}
+                onChange={(e) => handleAddProducts(e, p)}
+              />
+
+              <img src={p.image.src} />
+
+              <span className="productTitle">{p.title}</span>
+            </div>
+
             {p.variants.map((v) => (
-              <div key={v.id + 100}>
+              <div key={v.id} className="variant">
                 <input
                   type="checkbox"
                   checked={selectedVariants.includes(v.id)}
                   onChange={(e) => handleAddVariants(e, v, p)}
                 />
-                <h4>{v.title}</h4>
-                <h4>${v.price}</h4>
+
+                <span className="variantTitle">{v.title}</span>
+
+                <span className="variantPrice">${v.price}</span>
               </div>
             ))}
           </div>
-        </div>
-      ))}
+        ))}
 
-      {loading && <p>Loading...</p>}
-      {!hasMore && <p>No more products</p>}
+        {loading && <p className="status">Loading...</p>}
+        {!hasMore && <p className="status">No more products</p>}
+      </div>
     </section>
   );
 };
