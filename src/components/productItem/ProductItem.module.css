@@ -1,7 +1,15 @@
-.item {
+.wrapper {
   display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 2px 1fr 1fr 10px;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
 }
 
 .itemNumber {
@@ -53,4 +61,27 @@
   border: none;
   font-size: 16px;
   cursor: pointer;
+}
+
+.discountInput {
+  width: 50px;
+  padding: 6px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.discountType {
+  padding: 6px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+}
+
+.variantToggle {
+  background: none;
+  border: none;
+  color: #1a73e8;
+  font-size: 13px;
+  cursor: pointer;
+  align-self: flex-end;
 }
