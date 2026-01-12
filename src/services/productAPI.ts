@@ -1,29 +1,5 @@
 import products from "../data/products.json";
-
-export type DiscountType = "flat" | "percentage";
-
-export interface Discount {
-  type: DiscountType;
-  value: number;
-}
-
-export interface Variant {
-  id: number | string;
-  product_id: number;
-  title: string;
-  price: string;
-  discount?: Discount;
-}
-
-export interface Product {
-  id: number;
-  title: string;
-  variants: Variant[];
-  image: {
-    src: string;
-  };
-  discount?: Discount;
-}
+import type { Product } from "../utils/products.interface";
 
 export function fetchProducts({
   page = 1,
