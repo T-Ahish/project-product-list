@@ -1,73 +1,43 @@
-# React + TypeScript + Vite
+## E-Commerce Product List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is designed for e-commerce store owners to manage their product listings effectively. Below are the components and functionalities implemented.
 
-Currently, two official plugins are available:
+### Components
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### 1. Product List
 
-## React Compiler
+- Displays a list of selected products.
+- Supports multiple variants for each product.
+- Allows adding discounts (flat or percentage) to products or variants.
+- Provides an option to remove products, with restrictions based on the number of products in the list.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+#### 2. Product Picker
 
-## Expanding the ESLint configuration
+- A dialog box that fetches and displays products from the store.
+- Allows selection of multiple products and variants.
+- Implements scroll-based pagination to load products in batches.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+#### 3. Add Product Button
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- A button to add a new product to the end of the list.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Definitions
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Product**: An item for sale, including a name, image, and variants (e.g., Sports Shoes).
+- **Product Variant**: An optional variation of a product (e.g., sizes and colors).
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### API Documentation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Get Products API**
+  - **URL**: [Get Products](https://stageapi.monkcommerce.app/task/products/search?search=Hat&page=2&limit=1)
+  - **HTTP Method**: GET
+  - **Query Params**: Search term, page number, and limit.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Local Development
+
+- A local JSON data structure simulates the API for development purposes.
+- Promises are used to mimic API calls for fetching product data.
+
+### Repository
+
+- The complete code is available in the public GitHub repository: [GitHub Repository Link](https://github.com/T-Ahish/project-product-list)
