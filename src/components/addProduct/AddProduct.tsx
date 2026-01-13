@@ -3,11 +3,12 @@ import Modal from "../modal/Modal";
 import ProductPicker from "../productPicker/ProductPicker";
 import type { FetchProducts } from "../../utils/fetchProducts.interface";
 import styles from "./AddProduct.module.css";
-import { useState } from "react";
 
 interface AddProductProps extends FetchProducts {
-  confirmSelection: () => void;
-  cancelSelection: () => void;
+  isOpen: boolean;
+  handleConfirm: () => void;
+  handleCancel: () => void;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const AddProduct = ({
@@ -19,23 +20,13 @@ const AddProduct = ({
   loading,
   hasMore,
   loadNextPage,
-  confirmSelection,
-  cancelSelection,
+  isOpen,
+  handleCancel,
+  handleConfirm,
+  setIsOpen,
 }: AddProductProps) => {
-  const [open, setOpen] = useState(false);
-
-  const handleConfirm = () => {
-    confirmSelection();
-    setOpen(false);
-  };
-
-  const handleCancel = () => {
-    cancelSelection();
-    setOpen(false);
-  };
-
   return (
-    <Root open={open} onOpenChange={setOpen}>
+    <Root open={isOpen} onOpenChange={setIsOpen}>
       <Trigger asChild>
         <button className={styles.addProductButton}>Add Product</button>
       </Trigger>

@@ -1,6 +1,6 @@
 .variantRow {
   display: grid;
-  grid-template-columns: 0.75fr auto 24px;
+  grid-template-columns: 1fr 200px 24px;
   align-items: center;
   gap: 12px;
 
@@ -42,16 +42,29 @@
   cursor: pointer;
 }
 
-.discountInput {
-  width: 50px;
-  padding: 6px;
-  border: 1px solid #dcdcdc;
-  border-radius: 6px;
-  text-align: center;
+.variantEditor {
+  display: flex;
+  gap: 10px;
 }
 
-.discountType {
-  padding: 6px;
+.variantValue {
+  display: flex;
+  align-items: center;
   border: 1px solid #dcdcdc;
-  border-radius: 6px;
+  padding: 8px 8px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 999px;
+  width: 30%;
+}
+
+.variantMode {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dcdcdc;
+  padding: 8px 15px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 999px;
+  width: 50%;
 }

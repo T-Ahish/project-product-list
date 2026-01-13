@@ -63,20 +63,6 @@
   cursor: pointer;
 }
 
-.discountInput {
-  width: 50px;
-  padding: 6px;
-  border: 1px solid #dcdcdc;
-  border-radius: 6px;
-  text-align: center;
-}
-
-.discountType {
-  padding: 6px;
-  border: 1px solid #dcdcdc;
-  border-radius: 6px;
-}
-
 .variantToggle {
   background: none;
   border: none;
@@ -84,4 +70,29 @@
   font-size: 13px;
   cursor: pointer;
   align-self: flex-end;
+}
+
+.discountEditor {
+  display: flex;
+  gap: 5px;
+}
+
+.discountValueButton {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dcdcdc;
+  padding: 8px 8px;
+  background: #fff;
+  cursor: pointer;
+  width: 30%;
+}
+
+.discountModeDropdown {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dcdcdc;
+  padding: 8px 15px;
+  background: #fff;
+  cursor: pointer;
+  width: 50%;
 }

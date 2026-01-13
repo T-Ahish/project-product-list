@@ -1,4 +1,4 @@
-export type DiscountType = "flat" | "percentage";
+export type DiscountType = "flat" | "percent";
 
 export interface Discount {
   type: DiscountType;
